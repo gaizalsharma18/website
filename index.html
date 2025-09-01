@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaizal Sharma - CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);       min-height: 100vh;       color: #333;       line-height: 1.6;
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to 
+{ opacity: 1; transform: translateY(0); } }
+    @keyframes glow { 0%, 100% { box-shadow: 0 5px 25px rgba(102, 126, 234, 
+0.3); } 50% { box-shadow: 0 10px 40px rgba(102, 126, 234, 0.6); } }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: 
+translateY(-10px); } }
+    .container {       width: 90%;       max-width: 900px;       margin: 40px auto;       padding: 40px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);       border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);       animation: glow 3s ease-in-out infinite;
+      position: relative;       overflow: hidden;
+    }
+    .container::before {       content: '';       position: absolute;
+      top: 0;       left: -100%;       width: 100%;       height: 100%;       background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      animation: shine 3s infinite;
+    }
+    @keyframes shine { 0% { left: -100%; } 100% { left: 100%; } }     h1 {       font-size: 3em;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;       margin-bottom: 10px;
+      animation: float 6s ease-in-out infinite;       text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }     h2 {       color: #444;
+      border-bottom: 3px solid transparent;
+      border-image: linear-gradient(45deg, #667eea, #764ba2) 1;       padding-bottom: 5px;       margin: 20px 0 15px 0;       position: relative;       overflow: hidden;
+    }     h2::after {       content: '';       position: absolute;       bottom: 0;       left: -100%;       width: 100%;       height: 3px;
+      background: linear-gradient(45deg, #667eea, #764ba2);       animation: slideIn 0.8s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+    @keyframes slideIn { to { left: 0; } }
+    .top-links {       text-align: center;       margin-bottom: 30px;       padding: 15px;
+      background: rgba(102, 126, 234, 0.1);
+      border-radius: 15px;
+      border: 1px solid rgba(102, 126, 234, 0.2);
+    }     a {
+      color: #667eea;       text-decoration: none;       font-weight: 600;       transition: all 0.3s ease;       position: relative;
+    }
+    a::before {       content: '';       position: absolute;       width: 0;       height: 2px;       bottom: -2px;       left: 50%;
+      background: linear-gradient(45deg, #667eea, #764ba2);       transition: all 0.3s ease;
+    }     a:hover {       color: #764ba2;
+      transform: translateY(-2px);
+    }
+    a:hover::before {       width: 100%;       left: 0;
+    }
+    .section {       margin-bottom: 25px;       padding: 20px;       border-radius: 15px;       background: rgba(255,255,255,0.7);       backdrop-filter: blur(5px);
+      border: 1px solid rgba(102, 126, 234, 0.1);
+      transition: all 0.3s ease;
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .section:nth-child(1) { animation-delay: 0.1s; }
+    .section:nth-child(2) { animation-delay: 0.2s; }
+    .section:nth-child(3) { animation-delay: 0.3s; }
+    .section:nth-child(4) { animation-delay: 0.4s; }
+    .section:nth-child(5) { animation-delay: 0.5s; }
+    .section:nth-child(6) { animation-delay: 0.6s; }
+    @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
+    .section:hover {       transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+    }     ul {
+      padding-left: 20px;
+    }     li {       margin: 8px 0;
+      transition: all 0.3s ease;
+    }     li:hover {       color: #667eea;       transform: translateX(10px);     }     li strong {       color: #764ba2;
+    }     p {
+      text-align: justify;
+    }
+    .email {       text-align: center;       font-size: 1.1em;       margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .container { padding: 20px; margin: 20px auto; }       h1 { font-size: 2.2em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gaizal Sharma</h1>
+    <div class="top-links">
+     
+    </div>
+    <p class="email">Email: <a 
+href="mailto:ajnimator@gmail.com">GaizalSharma21@gmail.com</a></p>
+    
+    <div class="section">
+      <h2>Objective</h2>
+      <p>Creative and technically driven game developer and software enthusiast, currently pursuing B.Tech in Computer Science (IoT specialization). Skilled at building innovative projects ranging from indie games to productivity tools, with internship experience in both tech and game studios.</p>
+    </div>
+    
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech CSE (IoT specialization)</strong> — Noida Institute of Engineering & Technology (2023 – Present, 3rd Year)</li>         <li><strong>12th Grade (CBSE)</strong> — 2023</li>
+        <li><strong>10th Grade (CBSE)</strong> — 2021</li>
+      </ul>
+    </div>
+    
+
+    
+    
+    
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: C++, Rust, Python, C#, Unity</li>
+        <li>Database: SQL, NoSQL</li>
+        <li>Soft Skills: Communication, problem-solving, rapid prototyping</li>
+      </ul>
+    </div>
+  </div>
